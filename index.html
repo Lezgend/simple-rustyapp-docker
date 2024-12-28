@@ -1,21 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8 " />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RustyApp</title>
-    <link rel="stylesheet" href="/styles-8fabd3853de56244.css" integrity="sha384&#x2D;3lhF1cqpHmmet2JrcgCWLP4xGnNiJX6lieirc4Ion&#x2B;fyDXM6yqDInz6TC20XVHvw"/>
-  <link rel="modulepreload" href="/simple-rustyapp-ca531c6287b942bd.js" crossorigin=anonymous integrity="sha384-Zv77FVx/Enesli4noBP6D4fiaZf86aHAjg/+YYPzeXcDQvZZ5FusBHlLsPYQymHI"><link rel="preload" href="/simple-rustyapp-ca531c6287b942bd_bg.wasm" crossorigin=anonymous integrity="sha384-LSt719oID5hEXsyLnN5Fyi6K8L97oTodNNihk4TNZLQZdMJDu2xKElmpsYaFbNsj" as="fetch" type="application/wasm"></head>
+    <link rel="stylesheet" href="/simple-rustyapp-docker/styles-8fabd3853de56244.css" />
+    <link rel="modulepreload" href="/simple-rustyapp-docker/simple-rustyapp-ca531c6287b942bd.js" crossorigin="anonymous" />
+    <link rel="preload" href="/simple-rustyapp-docker/simple-rustyapp-ca531c6287b942bd_bg.wasm" crossorigin="anonymous" as="fetch" type="application/wasm" />
+  </head>
   <body>
-<script type="module" nonce="2ebaG7jZtFNAluDxX88J8w==">
-import init, * as bindings from '/simple-rustyapp-ca531c6287b942bd.js';
-const wasm = await init({ module_or_path: '/simple-rustyapp-ca531c6287b942bd_bg.wasm' });
+    <script type="module">
+      import init, * as bindings from '/simple-rustyapp-docker/simple-rustyapp-ca531c6287b942bd.js';
+      const wasm = await init({ module_or_path: '/simple-rustyapp-docker/simple-rustyapp-ca531c6287b942bd_bg.wasm' });
 
+      window.wasmBindings = bindings;
 
-window.wasmBindings = bindings;
-
-
-dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
-
-</script></body>
+      dispatchEvent(new CustomEvent("TrunkApplicationStarted", { detail: { wasm } }));
+    </script>
+  </body>
 </html>
