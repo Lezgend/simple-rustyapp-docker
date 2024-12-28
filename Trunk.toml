@@ -3,6 +3,7 @@ release = true
 
 [output]
 dir = "dist"
+public_url = "/simple-rustyapp-docker/"
 
 [serve]
 port = 8000 
