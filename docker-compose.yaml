@@ -1,0 +1,11 @@
+services:
+  simple-rustyapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rustyapp
+    restart: always
+    ports:
+      - 8000:80
+    environment:
+      - RUST_LOG=debug

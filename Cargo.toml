@@ -1,0 +1,8 @@
+[package]
+name = "simple-rustyapp"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+yew = { version = "0.21", features = ["csr"] }
+gloo = "0.9"
